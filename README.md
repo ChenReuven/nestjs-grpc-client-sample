@@ -28,6 +28,9 @@
 ## Showcase
 ![Showcase](assets/showcase/showcase-grpc-demo.gif)
 
+![Showcase](assets/showcase/diagram%20network.jpg)
+
+
 ## How to make it work in your local machine
 1. clone: https://github.com/ChenReuven/nestjs-grpc-client-sample
 2. clone this repo: https://github.com/ChenReuven/nestjs-grpc-server-sample
