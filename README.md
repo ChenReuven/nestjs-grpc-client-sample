@@ -1,3 +1,4 @@
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
@@ -23,6 +24,34 @@
 </p>
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+
+## Showcase
+![Showcase](assets/showcase/showcase-grpc-demo.gif)
+
+## How to make it work in your local machine
+1. clone: https://github.com/ChenReuven/nestjs-grpc-client-sample
+2. clone this repo: https://github.com/ChenReuven/nestjs-grpc-server-sample
+3. make sure you have Node Version 12 or above
+
+
+```bash
+   npm install (in both repos)
+```
+ 
+```bash
+    npm run start (in both repos)
+```
+
+5.Send HTTP call via your tool to
+- i use talend-api-tester: https://chrome.google.com/webstore/detail/talend-api-tester-free-ed/aejoelaoggembcahagimdiliamlcdmfm?hl=en
+```
+URL: http://localhost:3000/add
+METHOD: POST
+Body: {
+    "data": [1,2,3,4,5]
+}
+```
+And you need to get the <b>Result, 15 in this case</b> :)
 
 ## Description
 
