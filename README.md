@@ -28,7 +28,7 @@
 ## Showcase
 ![Showcase](assets/showcase/showcase-grpc-demo.gif)
 
-![Showcase](assets/showcase/diagram%20network.jpg)
+![Showcase](assets/showcase/diagram-network.jpg)
 
 
 ## How to make it work in your local machine
