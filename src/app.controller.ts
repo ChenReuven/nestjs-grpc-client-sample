@@ -7,21 +7,18 @@ import { microserviceOptions } from './grpc.options';
 export class AppController implements OnModuleInit {
   private logger = new Logger('AppController');
 
-  @Client(microserviceOptions) // <-- Add
-  private client: ClientGrpc;  // <-- this
+  @Client(microserviceOptions)
+  private client: ClientGrpc;
 
   private grpcService: IGrpcService;
 
-  // constructor(private mathService: MathService) {} // <-- Remove this
-
-  onModuleInit() {                                                            // <--
-    this.grpcService = this.client.getService<IGrpcService>('AppController'); // <-- Add this
-  }                                                                           // <--
+  onModuleInit() {
+    this.grpcService = this.client.getService<IGrpcService>('AppController');
+  }
 
   @Post('add')
   async accumulate(@Body('data') data: number[])  {
-    this.logger.log('Adding ' + data.toString());
-    // return this.mathService.accumulate(data);  // <-- Change this
-    return this.grpcService.accumulate({ data }); // <-- to this
+    this.logger.log(`Adding ${data.toString()}`);
+    return this.grpcService.accumulate({ data });
   }
 }
